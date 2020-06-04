@@ -28,7 +28,7 @@ jobs:
         node-version: 12
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: Install # will run `yarn install` command
+        cmd: install # will run `yarn install` command
         
     - name: Build React App
       run: yarn build
@@ -37,4 +37,4 @@ jobs:
       run: npm Install --global surge
       
     - name: Deploy to Surge
-      run: surge ./build  project003.surge.su $ {{secrets.SURGE_TOKEN}}
+      run: surge ./build  project003-sharjeel.surge.sh --token ${{secrets.SURGE_TOKEN}}
