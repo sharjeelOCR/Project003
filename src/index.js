@@ -5,8 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div>Hello World from Index
-    <span>New Text of Span</span>,<App name = "SHARJEEL" age = {30}/>
+  <div><h1>Hello World From Sharjeel Muzaffar</h1>
+  <App name = "SHARJEEL" age = {30}/>
   </div>,
   document.getElementById('root')
 );
